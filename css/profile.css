@@ -1,0 +1,205 @@
+/* ============================================================
+   PROFILE PAGE STYLES (profile.css)
+   ============================================================ */
+
+body.profile-page {
+  grid-template-columns: var(--sidebar-w) 1fr;
+}
+
+.profile-main {
+  max-width: 935px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  animation: fadeUp 0.4s ease both;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 20px 40px 40px;
+}
+
+.avatar--xl {
+  width: 150px;
+  height: 150px;
+  font-size: 44px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.profile-title-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-username {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.btn-edit-profile, .btn-friend-action {
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background var(--transition), border-color var(--transition);
+}
+.btn-edit-profile:hover, .btn-friend-action:hover {
+  background: #2a2a2a;
+}
+.btn-friend-action--primary {
+  background: var(--accent);
+  color: #1a0e00;
+  border-color: var(--accent);
+}
+.btn-friend-action--primary:hover {
+  background: #d48f43;
+}
+
+.btn-settings-profile {
+  color: var(--text);
+  transition: color var(--transition);
+}
+.btn-settings-profile:hover {
+  color: var(--text-muted);
+}
+
+.profile-stats {
+  display: flex;
+  gap: 40px;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.profile-stats strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.profile-bio-text {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.profile-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.profile-link:hover {
+  text-decoration: underline;
+}
+
+.profile-tabs-wrapper {
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+}
+
+.profile-tabs {
+  display: flex;
+  gap: 60px;
+}
+
+.profile-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 0;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-top: 1px solid transparent;
+  margin-top: -1px;
+  transition: color var(--transition);
+}
+.profile-tab.active {
+  color: var(--text);
+  border-top-color: var(--text);
+}
+.profile-tab:hover {
+  color: var(--text);
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.grid-item {
+  aspect-ratio: 1 / 1;
+  background: var(--bg-hover);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.grid-item .post-image {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-item-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+.grid-item:hover .grid-item-overlay {
+  opacity: 1;
+}
+
+.overlay-stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Extra backgrounds for grid */
+.post-image--street { background: linear-gradient(135deg, #1c1c1c 0%, #2a2a2a 50%, #111 100%); }
+.post-image--sunset { background: linear-gradient(to top, #ff7e5f, #feb47b); }
+.post-image--night { background: radial-gradient(circle at 50% 50%, #2b5876 0%, #4e4376 100%); }
+.post-image--coffee { background: linear-gradient(to right, #b9935a, #e7cba9); }
+
+/* Responsive adjustments for profile */
+@media (max-width: 900px) {
+  .profile-header { padding: 20px 20px 30px; gap: 40px; }
+  .avatar--xl { width: 120px; height: 120px; font-size: 32px; }
+}
+@media (max-width: 580px) {
+  .profile-main { padding: 16px 12px 60px; gap: 20px; }
+  .profile-header { padding: 10px 0 20px; gap: 20px; flex-direction: column; align-items: flex-start; }
+  .profile-title-row { flex-wrap: wrap; }
+  .profile-stats { gap: 20px; font-size: 14px; }
+  .profile-tabs { gap: 40px; }
+  .avatar--xl { width: 80px; height: 80px; font-size: 24px; }
+  .profile-grid { gap: 2px; }
+}

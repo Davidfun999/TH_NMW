@@ -1,0 +1,12 @@
+#logo{
+    background-color: pink;
+}
+#paner{
+    background-color:paleturquoise;
+}
+.navbar {
+    display: flex;
+}
+#content{
+    background-color: bisque;
+}

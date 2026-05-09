@@ -1,0 +1,64 @@
+/* Tổng thể thanh menu */
+.topnav {
+  background-color: #333;
+  display: flex; /* Cho phép các phần tử nằm ngang trên PC */
+}
+
+/* Phần logo 'Home' */
+.logo {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Các mục menu con */
+.menu-items {
+  display: flex; /* Nằm ngang trên PC */
+}
+
+.menu-items a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Ẩn nút 3 gạch trên PC */
+.icon {
+  display: none;
+}
+
+/* GIAO DIỆN MOBILE (Dưới 600px) */
+@media screen and (max-width: 600px) {
+  .topnav {
+    flex-direction: column; /* Xếp chồng theo chiều dọc */
+  }
+
+  .header-bar {
+    display: flex;
+    justify-content: space-between; /* Đẩy Home sang trái, Icon sang phải */
+    background-color: #04AA6D; /* Màu xanh phủ hết hàng đầu */
+    align-items: center;
+  }
+
+  .icon {
+    display: block; /* Hiện nút 3 gạch */
+    color: white;
+    padding: 14px 20px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  /* Mặc định ẩn các menu con trên mobile */
+  .menu-items {
+    display: none;
+    flex-direction: column;
+  }
+
+  /* Khi nhấn nút (thêm class open), menu sẽ hiện ra */
+  .topnav.open .menu-items {
+    display: block;
+  }
+}

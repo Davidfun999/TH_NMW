@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab Thực Hành</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/labs.css" />
+</head>
+<body style="display: flex; height: 100vh; overflow: hidden; margin: 0; background-color: #000;">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar" style="position: static; height: 100%;">
+    <!-- Logo -->
+    <a href="index.html" class="sidebar-logo">
+      <div class="logo-icon" title="EXIFSHARE">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" />
+          <path d="M9 2h6l1.5 3H18a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h1.5L9 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </a>
+
+    <!-- Main nav -->
+    <nav class="sidebar-nav">
+      <button class="nav-btn" id="btn-new-post" title="Thêm bài viết mới">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="2" />
+          <path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+      <button class="nav-btn" id="btn-search" title="Tìm kiếm">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" />
+          <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+      <a href="index.html" class="nav-btn" title="Trang chủ">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+          <polyline points="9 22 9 12 15 12 15 22" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+        </svg>
+      </a>
+      <a href="labs.html" class="nav-btn nav-btn--active" title="Bài Lab">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        </svg>
+      </a>
+      <a href="profile.html" class="nav-btn" id="btn-profile" title="Trang cá nhân">
+        <div class="avatar avatar--sm">MN</div>
+      </a>
+    </nav>
+    <div class="sidebar-bottom">
+      <button class="nav-btn" id="btn-settings" title="Cài đặt">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" />
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ===== LABS MAIN ===== -->
+  <main class="labs-main">
+
+
+    <div class="labs-content">
+      <div class="labs-grid">
+        <!-- Lab01 -->
+        <div class="lab-card">
+          <div class="lab-card-title">Lab01: HTML</div>
+          <div class="lab-card-links">
+            <a href="../Lab/lab01/lab1_bai3.html" target="_blank">Lab1_3</a>
+            <a href="../Lab/lab01/lab1_bai4.html" target="_blank">Lab1_4</a>
+          </div>
+          <a href="../Lab/lab01/index.html" target="_blank" class="btn-view-details">Xem chi tiết</a>
+        </div>
+
+        <!-- Lab02 -->
+        <div class="lab-card">
+          <div class="lab-card-title">Lab02: Table & List</div>
+          <div class="lab-card-links">
+            <a href="../Lab/Lab02/lab02_bai1.html" target="_blank">Lab2_bai1</a>
+            <a href="../Lab/Lab02/lab02_bai2.html" target="_blank">Lab2_bai2</a>
+            <a href="../Lab/Lab02/lab02_khung_table.html" target="_blank">Lab2_khung_table</a>
+          </div>
+          <a href="../Lab/Lab02/Vi_du_Lab01/index.html" target="_blank" class="btn-view-details">Xem chi tiết</a>
+        </div>
+
+        <!-- Lab03 -->
+        <div class="lab-card">
+          <div class="lab-card-title">Lab03: Frame & Form</div>
+          <div class="lab-card-links">
+            <a href="../Lab/Lab03/Vi_du/index2.html" target="_blank">Vi_du/index2.html</a>
+            <a href="../Lab/Lab03/Vi_du_Lab01/dangky.html" target="_blank">dangky.html</a>
+            <a href="../Lab/Lab03/Vi_du_Lab01/index.html" target="_blank">index.html</a>
+          </div>
+          <a href="../Lab/Lab03/Vi_du_Lab01/index.html" target="_blank" class="btn-view-details">Xem chi tiết</a>
+        </div>
+
+        <!-- Lab04 -->
+        <div class="lab-card">
+          <div class="lab-card-title">Lab04: CSS cơ bản</div>
+          <div class="lab-card-links">
+            <a href="../Lab/Lab04/Vi_du/index.html" target="_blank">Vi_du/index.html</a>
+          </div>
+          <a href="../Lab/Lab04/Vi_du/index.html" target="_blank" class="btn-view-details">Xem chi tiết</a>
+        </div>
+
+        <!-- Lab05 (Placeholder as in image) -->
+        <div class="lab-card">
+          <div class="lab-card-title">Lab05: Các thuộc tính CSS</div>
+          <div class="lab-card-links">
+            <a href="#">Lab5_1</a>
+            <a href="#">Lab5_2</a>
+            <a href="#">Lab5_3</a>
+            <a href="#">Lab5_4</a>
+          </div>
+          <a href="#" class="btn-view-details">Xem chi tiết</a>
+        </div>
+
+        <!-- Lab06 -->
+        <div class="lab-card">
+          <div class="lab-card-title">Lab06: Xây dựng layout responsive bằng CSS</div>
+          <div class="lab-card-links">
+            <a href="../Lab/Lab06/bai_1/index.html" target="_blank">bai_1</a>
+            <a href="../Lab/Lab06/Bai_2_Minh_hoa_layout/index.html" target="_blank">Minh_hoa_layout</a>
+            <a href="../Lab/Lab06/Vi_du/index.html" target="_blank">Vi_du</a>
+          </div>
+          <a href="../Lab/Lab06/Vi_du/index.html" target="_blank" class="btn-view-details">Xem chi tiết</a>
+        </div>
+
+        <!-- Lab07 (Placeholder as in image) -->
+        <div class="lab-card">
+          <div class="lab-card-title">Lab07: Javascript</div>
+          <div class="lab-card-links">
+            <a href="#">Lab7_1</a>
+            <a href="#">Lab7_2</a>
+          </div>
+          <a href="#" class="btn-view-details">Xem chi tiết</a>
+        </div>
+
+        <!-- Lab08 (Placeholder as in image) -->
+        <div class="lab-card">
+          <div class="lab-card-title">Lab08: Javascript nâng cao</div>
+          <div class="lab-card-links">
+            <a href="#">Lab8_1</a>
+            <a href="#">Lab8_2</a>
+            <a href="#">Lab8_3</a>
+          </div>
+          <a href="#" class="btn-view-details">Xem chi tiết</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

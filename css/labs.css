@@ -1,0 +1,112 @@
+/* css/labs.css */
+.labs-main {
+  flex: 1;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.labs-navbar {
+  display: flex;
+  height: 60px;
+  background-color: #27ae60;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.labs-nav-category {
+  background-color: #000;
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  min-width: 250px;
+}
+
+.labs-nav-menu {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 0 20px;
+  gap: 24px;
+}
+
+.labs-nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.labs-nav-menu a:hover {
+  opacity: 0.8;
+}
+
+.labs-content {
+  padding: 30px;
+}
+
+.labs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.lab-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.lab-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.lab-card-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.lab-card-links a {
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.lab-card-links a:hover {
+  color: #27ae60;
+}
+
+.btn-view-details {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.btn-view-details:hover {
+  background-color: #219653;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://w3.org">
+<html xmlns="http://w3.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Cập nhật thông tin sản phẩm</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; background: #fff; }
+        td { padding: 8px; border: 1px solid #ddd; }
+        .title-form { font-weight: bold; text-align: center; font-size: 18px; color: #b22222; background: #eee; }
+        input, input[type="number"], textarea, select { width: 95%; padding: 5px; }
+        .btn-group { text-align: center; padding: 15px; }
+    </style>
+</head>
+<body>
+
+    <!-- Action truyền đến file xl_lab03_bai3.php theo yêu cầu -->
+    <form name="frmSanPham" action="xl_lab03_bai3.php" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td colspan="2" class="title-form">THÔNG TIN CHI TIẾT SẢN PHẨM</td>
+            </tr>
+            
+            <tr>
+                <td width="30%">Mã sản phẩm (1)</td>
+                <td><input type="text" name="nmProID" /></td>
+            </tr>
+            <tr>
+                <td>Tên sản phẩm (2)</td>
+                <td><input type="text" name="nmProName" /></td>
+            </tr>
+            <tr>
+                <td>Hình ảnh sản phẩm (3)</td>
+                <td><input type="file" name="nmProImg" /></td>
+            </tr>
+            <tr>
+                <td>Nhà sản xuất/NXB (4)</td>
+                <td><input type="text" name="nmMan" /></td>
+            </tr>
+            <tr>
+                <td>Chiều rộng (5)</td>
+                <td><input type="text" name="nmWidth" placeholder="VD: 15cm" /></td>
+            </tr>
+            <tr>
+                <td>Chiều cao (6)</td>
+                <td><input type="text" name="nmHeight" placeholder="VD: 25cm" /></td>
+            </tr>
+            <tr>
+                <td>Số lượng/Số trang (7)</td>
+                <td><input type="number" name="nmCount" /></td>
+            </tr>
+            <tr>
+                <td>Tác giả (8)</td>
+                <td><input type="text" name="nmTacGia" /></td>
+            </tr>
+            <tr>
+                <td>Đơn giá (9)</td>
+                <td><input type="text" name="nmPrice" /></td>
+            </tr>
+            <tr>
+                <td>Màu sắc (10)</td>
+                <td><input type="text" name="nmColor" /></td>
+            </tr>
+            <tr>
+                <td>Xuất xứ/Tình trạng (11)</td>
+                <td><input type="text" name="nmLive" /></td>
+            </tr>
+            
+            <tr>
+                <td>Chức năng/Tính năng (12)</td>
+                <td>
+                    <!-- Đặt tên nmFunctions[] để PHP nhận dạng là một mảng dữ liệu -->
+                    <input type="checkbox" name="nmFunctions[]" value="Giao hàng nhanh" /> Giao hàng nhanh <br/>
+                    <input type="checkbox" name="nmFunctions[]" value="Bảo hành tận nơi" /> Bảo hành tận nơi <br/>
+                    <input type="checkbox" name="nmFunctions[]" value="Đổi trả miễn phí" /> Đổi trả miễn phí
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Mô tả chi tiết (13)</td>
+                <td>
+                    <textarea name="nmProDet" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="btn-group">
+                    <input type="submit" name="btnSubmit" value="Lưu sản phẩm" />
+                    <input type="reset" name="btnReset" value="Làm lại" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
