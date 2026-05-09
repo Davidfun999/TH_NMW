@@ -1,0 +1,48 @@
+.menu{
+    background-color: aquamarine;
+    list-style: none;
+    min-height: 30px;
+    display: flex;
+}
+.menu li{
+    line-height: 30px;
+    margin-left: 30px;
+}
+.menu li a{
+    text-decoration: none;
+}
+.menu :hover{
+    background-color: burlywood;
+}
+.menu li a:hover{
+    color: rgb(130, 130, 138);
+}
+.font {
+    font-family: "Sekuya", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.menu2{
+    background-color: aquamarine;
+    list-style: none;
+    padding: 0px;
+    width: 250px;
+}
+.menu2 li{
+    line-height: 30px;
+    height: auto;
+    border-bottom: solid;
+}
+.menu2 :hover{
+    background-color: pink;
+    border-radius: 5px;
+}
+.menu2 li a:hover{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.menu2 li a{
+    text-decoration: none;
+}
